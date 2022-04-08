@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/detail1"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="USERNAME" />
+
+    <EditText
+        android:id="@+id/detail2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="PASSWORD"
+        android:inputType="textPassword" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_below="@id/detail2"
+        android:id="@+id/login"
+        android:text="Login here"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail2"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/login"
+        android:text="Register here" />
+
+
+</RelativeLayout>
